@@ -1,8 +1,4 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
-.structure {
-  margin: 5px;
-  max-width: 1200px;
-}
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {

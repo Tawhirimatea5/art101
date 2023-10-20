@@ -1,9 +1,36 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+    background-image: url(https://sky.shorthandstories.com/messi-perfect-ending/assets/ckU1G7EE5Y/ap22352771589324-3677x2451.jpg);
+    background-size: 95%;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+    font-size: 550%;
+
+    color: #00ffff;
+    
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+
+    font-size: 38 px;
+
+    font-weight: 100;
+
+    color: #ffd700;
+
+    border: solid 2px #ffffff;
+
+    background: rgba(135, 206, 250, .7);
+
+    padding: 14px;
+}
+p {
+    padding: 14px;
+    margin-bottom: 14px;
+    border:solid 1px #87cefa;
+    background: rgba(255, 255, 255, .8);
+    font-family:'Times New Roman', Times, serif, cursive;
+    font-size: 35px;
+}
