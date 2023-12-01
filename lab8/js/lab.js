@@ -21,3 +21,20 @@ var checkArray = array.map(function(x){
 })
 
 console.log("Multiplication of array by 3:", checkArray)
+
+//Original
+var originalArray = "Original: " + array.join(", ");
+
+//Check subtraction
+var subtractionResults = "Subtraction from the Array: " + array.map(subtractOne).join(", ");
+
+//Squareroot
+var squareRootResults = "Square root of Arrray: " + array.map(function(x) {
+    return x ** 0.5;
+}).join(", ");
+
+//Combanashun man
+var mapResults = originalArray + "<br>" + subtractionResults + "<br>" + squareRootResults;
+
+//Select elemen by ID and set html content
+$("#output").html(mapResults);

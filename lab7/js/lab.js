@@ -2,23 +2,37 @@
 // Author: Vincent Stuhlmuller
 // Date: 3 November 2023
 
-function sortUserName() {
-    var userName = window.prompt("Hi, Please tell me your name so I can fix it.");
-    console.log("userName =", userName);
+function sortUserName(userName) {
+    var nameWithoutSpaces = userName.replace(/\s/g, '');
 
-    var nameArray = userName.split('');
-    console.log("nameArray =", nameArray);
+    var nameArray = nameWithoutSpaces.toLowerCase().split('');
 
     var nameArraySort = nameArray.sort();
-    console.log("nameArraySort =", nameArraySort);
 
     var nameSorted = nameArraySort.join('');
-    console.log("nameSorted =", nameSorted);
     
     return nameSorted;
 }
 
 
+function shuffleAndCapitalize(userName) {
+    var nameArray = userName.split('');
 
-document.writeln("Oh hey, I've fixed your name: ",
-    sortUserName(), "</br>");
+    var shuffledArray = nameArray.sort(() => Math.random() - 0.5);
+
+    var shuffledName = shuffledArray.join('');
+
+    var capitalizedName = shuffledName.toLowerCase().replace(/\b\w/g, l => l.toUpperCase());
+
+    return capitalizedName;
+}
+
+var userName = window.prompt("Hi, what is your name so I can fix it for you.")
+
+var sortedName = sortUserName(userName);
+
+var anagramName = shuffleAndCapitalize(userName);
+
+document.writeln("Hey look here is your fixed name: <div class='output'>" + sortedName + "</div>");
+
+document.writeln("Here is an anagram using your name: <div class='output'>" + anagramName + "</div>");

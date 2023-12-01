@@ -1,6 +1,6 @@
-// index.js - Conditional
+// index.js - Loops
 // Author: Vincent Stuhlmuller
-// Date: 23 November 2023
+// Date: 26 November 2023
 
 maxFactors = 4;
 

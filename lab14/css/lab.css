@@ -1,4 +1,8 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
+.structure {
+  margin: 5px;
+  max-width: 1200px;
+}
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
@@ -6,18 +10,4 @@
     margin-bottom: 10px;
     border: solid 1px #888;
     background-color: #DDD8C4;
-  }
-img {
-    width: 500px;
-    float: middle;
-    margin-right: -12px;
-    margin-top: -120 px;
-    border: 3px solid white;
-  }
-
-  .output {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: solid 2px #DDD8C4;
-    background-color: coral;
   }
